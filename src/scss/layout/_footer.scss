@@ -1,0 +1,14 @@
+footer{
+    background-color: $grisOscuro;
+    text-align: center;
+    padding: 1rem;
+    a{
+        margin: 0 2rem;
+        &:hover{
+            color: $verde;
+        }
+    }
+    h6{
+        color: $blanco;
+    }
+}

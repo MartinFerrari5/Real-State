@@ -1,0 +1,23 @@
+{
+    "name": "martin/real-state-pdo",
+    "description": "Creando proyecto POO",
+    "type": "project",
+    
+    "authors": [
+        {
+            "name": "Tinxo",
+            "email": "tinxo@correo.com"
+        }
+    ],
+    "require": {
+        "intervention/image": "^2.7",
+        "phpmailer/phpmailer": "^6.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Model\\": "./models", 
+            "MVC\\": "./" ,
+            "Controllers\\": "./controllers"
+        }
+    }
+}

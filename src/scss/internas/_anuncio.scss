@@ -1,0 +1,31 @@
+.section-alone{
+    .section-title{
+        text-align: center;
+    }
+    .article{
+        margin: auto;
+        width: 50%;
+    }
+}
+ul{
+    padding: 0;
+    text-align: center;
+    margin: auto;
+    list-style: none;
+    display: flex;
+    max-width:40rem ;
+    li{
+        
+        display: flex;
+        justify-content: center;
+        flex: 1, 0, 0;
+        margin: auto;
+        margin: 0px 1rem;
+        @include desktop{
+            grid-template-columns: none;
+        }
+        *{
+            margin: .2rem;
+        }
+    }
+}

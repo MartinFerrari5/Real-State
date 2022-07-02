@@ -1,0 +1,25 @@
+@import 'base/normalize';
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/globales';
+@import 'base/utilidades';
+@import 'base/botones';
+@import 'layout/header';
+@import 'layout/navegacion';
+@import 'layout/main';
+@import 'base/section';
+@import 'layout/contacto';
+@import 'layout/blog';
+@import 'layout/footer';
+@import 'layout/dark-mode';
+
+/*INTERNAS*/
+@import 'internas/nosotros';
+@import 'internas/blog';
+@import 'internas/contacto';
+@import 'internas/anuncio';
+@import 'internas/admin';
+@import 'internas/logIn';
+
+/*PHP*/
+@import 'php/contacto';

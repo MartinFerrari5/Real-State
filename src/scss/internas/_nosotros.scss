@@ -1,0 +1,15 @@
+.nosotros-grid{
+    @include grid(2, 1rem);
+    @include tablet{
+        grid-template-columns: none;
+    }
+    width: 80%;
+    margin: auto;
+    .second-column-title{
+        font-weight: bold;
+        text-align: center;
+    }
+}
+footer{
+    margin: 0;
+}

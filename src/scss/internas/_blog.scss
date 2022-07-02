@@ -1,0 +1,9 @@
+.blog-conteiner{
+    grid-template-columns: none;
+    width: 50%;
+}
+.blog-publi{
+    @include desktop{
+        flex-direction: column;
+    }
+}

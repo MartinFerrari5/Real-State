@@ -1,0 +1,79 @@
+.blog{
+    .blog-title{
+        text-align: center;
+    }
+}
+.conteiner{
+    width: 75%;
+   display: grid;
+   grid-template-columns: 2fr 1fr;
+   gap: 2rem;
+   @include desktop{
+       grid-template-columns: none;
+       width: 90%;
+   }
+    margin: auto;
+    .conteiner-first{
+        .blog-publi{
+            display: flex;
+            
+            margin: 2rem 0;
+            @include tablet{
+                flex-direction: column;
+                .blog-info-title{
+                    text-align: center;
+                    &::after{
+                        text-align: center;
+                        margin: auto;
+                    }
+                }
+            }
+            *{
+                padding: 0 1rem;
+                
+            }
+            
+           .blog-info{
+               flex:2, 0, 0;
+               align-self: flex-start;
+            
+            
+           }
+        }
+    }
+}
+.blog-info-title{
+    margin: 0;
+    font-weight: bold;
+    padding: 0;
+    
+    &::after{
+        content: " ";
+        display: block;
+        width: 50%;
+        height: .5rem;
+        background-color: $verde;
+    }
+}
+.author{
+    margin: 0;
+    span{
+        color: $amarillo;
+    }
+}
+.testimonio{
+    background-color: $verde;
+    border-radius: 1rem;
+    padding: 2rem;
+    
+    .testimonio-words{
+        display: flex;
+        font-size: 2rem;
+        
+    }
+}
+.testimonio-author{
+    text-align: right;
+    padding-right: 1.5rem;
+    color: $blanco;
+}

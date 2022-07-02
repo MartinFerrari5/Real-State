@@ -1,0 +1,6 @@
+.boton-verde{
+    @include button($blanco, $verde)
+}
+.boton-rojo{
+    @include button($blanco, $rojo)
+}

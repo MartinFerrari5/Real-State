@@ -1,0 +1,32 @@
+.obscuro-mode{
+    background-color: $negro;
+    *{
+        color: $blanco;
+    }
+    
+    input, textarea, select{
+        background-color: $negro;
+        color: $blanco;
+        border: 0.01rem solid $blanco;
+    }
+   
+   .anuncio{
+       li{
+           img{
+            filter: invert(70%);
+            filter: saturate(100%);
+           }
+           
+       }
+    .contenido-anuncio{
+        background-color: $grisOscuro !important;
+        .precio{
+           color: $verde;
+        }
+       }
+       
+   }
+   td{
+       color: $negro;
+   }
+}

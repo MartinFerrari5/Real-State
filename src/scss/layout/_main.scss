@@ -1,0 +1,28 @@
+.main-title{
+    text-align: center;
+}
+.grid-conteiner{
+    @include grid(3, 2rem);
+    @include tablet{
+        grid-template-columns: none;
+        gap: 2rem;
+    }
+    padding-top: 2rem;
+    width:70%;
+    margin: auto;
+    .assets-img{
+        margin:auto;
+        img{
+            height: 10rem;
+        }
+    }
+    .assets-title{
+        text-align: center;
+        font-weight: bold;
+        font-size: 3rem;
+        text-transform: uppercase;
+    }
+    .p-lorem{
+        text-align: justify;
+    }
+}

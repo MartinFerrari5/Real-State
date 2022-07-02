@@ -1,0 +1,87 @@
+html, .body-delete{
+    width: 100vw;
+    
+}
+body{
+    height: 100vh;
+    margin-bottom: 0px;
+}
+.error{
+    color: #f00;
+    text-align: center;
+    text-transform: uppercase;
+}
+.chequeado{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $verde;
+}
+table.propiedades{
+    margin: auto;
+   
+}
+thead{
+    background-color: $verde;
+    .table-head{
+        *{
+            padding: 1rem;
+        }
+    }
+}
+.imagenTabla{
+    width: 30rem;
+}
+.link-table{
+    @include button($blanco, #f00);
+    display: block;
+}
+tbody{
+    background-color: $gris;
+    text-align: center;
+}
+
+.img-small{
+    max-width: 40rem;
+    margin: auto;
+}
+.table-buttons{
+    a, button{
+        display: block;
+    }
+    button{
+        width: 100%;
+    }
+}
+
+
+.delete-article{
+    background-color: rgba(255,0,0,0.5);
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .delete-div-conteiner{
+        background-color: $blanco;
+        text-align: center;
+        padding: 1rem;
+        border: 0.1rem solid $negro;
+        .delete-div{
+            display: flex;
+            justify-content: center;
+            button, input{
+                width: 5rem;
+                height: 4rem;
+                margin: 0 1rem;
+            }
+        }
+    }
+}
+.vendedores{
+    margin: auto;
+}

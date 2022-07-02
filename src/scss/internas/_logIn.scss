@@ -1,0 +1,28 @@
+.logIn{
+   text-align: center;
+   p{
+       font-weight: bold;
+       text-transform: uppercase;
+   }
+   .form-logIn{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       input{
+           padding: .4rem;
+           width: 20rem;
+           margin: .5rem 0px;
+           border-radius: .5rem;
+           &:focus{
+               outline: none
+           }
+       }
+       input[type="submit"]{
+           @include button($blanco, $verde);
+       }
+   }
+}
+.error{
+    color: $rojo;
+}

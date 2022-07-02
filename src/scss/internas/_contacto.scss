@@ -1,0 +1,38 @@
+.contacto-page{
+    width: 60%;
+    margin: auto;
+    @include tablet{
+        width: 90%;
+    }
+}
+.campos{
+    display: flex;
+    flex-direction: column;
+    label{
+        font-weight: bold;
+    }
+    textarea{
+        resize: none;
+    }
+    input{
+        margin: 1rem 0;
+        padding: .5rem;
+        border-radius: .5rem;
+    }
+}
+.tel-email{
+    flex-direction: row;
+}
+.flex-tel-email{
+    display: flex;
+    flex-direction: row;
+    *{
+        margin: 0 1rem;
+    }
+    input{
+        align-self:center ;
+    }
+}
+.button-overall{
+    justify-content: flex-start;
+}

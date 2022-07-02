@@ -1,0 +1,73 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+.alterno{
+    background-color: $grisOscuro;
+    height: 8rem;
+    &{
+        padding: 1rem;
+    }
+    @include telefono{
+        height: 15rem;
+    }
+    &.height{
+        height: 30rem;
+    }
+}
+/* .webp y .no-webp añadidos por modernizer*/
+.no-webp .header{
+    background-image: url('../img/header.jpg');
+}
+.webp .header{
+    background-image: url('../img/header.webp');
+}
+.obscuro-mode{
+    background-color: $negro;
+    *{
+        color: $blanco;
+    }
+    
+    input, textarea, select{
+        background-color: $negro;
+        color: $blanco;
+    }
+    
+   
+}
+.header{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 60rem;
+}
+.obscuro{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    display: inline;
+    cursor: pointer;
+}
+.contenido-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 50rem;
+}
+.negro{
+    background-color: $negro;
+      *{
+        color: lighten($grisOscuro,40);
+    }
+    .p-testimonio{
+        color:$blanco;
+    }
+}
+.flex-links-moon{
+    display: flex;
+    align-items: center;
+    *{
+        margin: 0 1rem;
+    }
+    @include tablet{
+        flex-direction: column;
+    }
+}
